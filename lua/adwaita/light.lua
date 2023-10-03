@@ -226,10 +226,16 @@ M.set = function()
     hl('TelescopeResultsBorder', { fg = colors.light_5 })
     hl('TelescopePreviewBorder', { fg = colors.light_5 })
     hl('TelescopeNormal', { fg = colors.dark_3 })
-    hl('TelescopeSelection', { fg = colors.dark_3 })
+    hl('TelescopeSelection', { bg = colors.light_4, bold = true })
     hl('TelescopeMultiSelection', { fg = colors.dark_3, })
-    hl('TelescopeMatching', { fg = colors.dark_3, bold = true })
+    hl('TelescopeMatching', { fg = colors.blue_3 })
     hl('TelescopePromptPrefix', { fg = colors.dark_3, bold = true })
+    hl('TelescopeTitle', { fg = colors.blue_3, bold = true })
+    hl('TelescopePreviewTitle', { link = "TelescopeTitle" })
+    hl('TelescopePromptTitle', { link = "TelescopeTitle" })
+    hl('TelescopeResultsTitle', { link = "TelescopeTitle" })
+    hl('TelescopeSelectionCaret', { fg = colors.orange_2 })
+    hl('TelescopeResultsComment', { fg = colors.dark_2, italic = true })
 
     hl('LspReferenceText', { bg = colors.blue_7 })
     hl('LspReferenceRead', { bg = colors.blue_7 })
@@ -252,6 +258,17 @@ M.set = function()
     hl('GitSignsAddLn', { fg = colors.green_6, bg = colors.green_6 })
     hl('GitSignsChangeLn', { fg = colors.orange_1, bg = colors.orange_1 })
     hl("GitSignsCurrentLineBlame", { fg = colors.dark_2 })
+
+    -- Alpha dashboard
+    hl('DashboardCenter', { fg = colors.orange_2 })
+    hl('DashboardFooter', { fg = colors.dark_3, italic = true })
+    hl('DashboardHeader', { fg = colors.dark_3 })
+    hl('DashboardShortcut', { fg = colors.violet_2 })
+
+    -- Indent-Blankline
+    hl('IblIndent', { fg = colors.light_4 })
+    hl('IblWhitespace', { fg = colors.light_4 })
+    hl('IblScope', { fg = colors.orange_3 })
 end
 
 return M

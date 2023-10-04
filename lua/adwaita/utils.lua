@@ -19,6 +19,7 @@ M.gen_colors = function()
             blue_5              = "#1A5FB4",
             blue_6              = "#1B497E",
             blue_7              = "#193D66",
+            blue_8              = "#21364A",
             brown_1             = "#CDAB8F",
             brown_2             = "#B5835A",
             brown_3             = "#986A44",
